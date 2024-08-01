@@ -1,0 +1,6 @@
+__pycache__
+build/
+dist/
+virtual-env/Lib/*
+*.json
+*.txt

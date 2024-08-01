@@ -8,7 +8,7 @@ Ele uniu minha vontade de trabalhar com Python desktop e a necessidade de criar 
 - ative o ambiente virtual através do script activate
   - no windows execute: `virtual-env\Scripts\activate.bat`  
 - faça a instalação das depêndencias através do **requirements.txt** através do comando `pip install -r requirements.txt`
-- tenha o arquivo `conta-de-servico.json` que representa uma conta de serviço de um projeto Google Cloud.
+- tenha o arquivo `conta-de-servico.json` na raíz do projeto, que representa uma conta de serviço de um projeto Google Cloud.
 - execute o projeto no modo sem debug (Ctrl + F5)
 > Se tudo correr bem, a do programa deve aparecer.
 

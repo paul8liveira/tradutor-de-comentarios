@@ -26,6 +26,8 @@ Para compilar o projeto, utilize o comando `pyinstaller tradutor-de-comentarios.
 # Resultado
 Ainda há muito que melhorar, como por exemplo, comentários em bloco em arquivos JavaScript utilizando `/**/`, uso correto de caracteres especiais e uso de glossário para evitar tradução de termos indevidamente. De modo geral, está bem satisfatório e foi um bom aquecimento para posteriormente, desenvolver uma aplicação mais robusta 😄.
 
+Abaixo, um pedaço do resultado da tradução de um arquivo python. 
+
 ## Arquivo original
 ![image](https://github.com/user-attachments/assets/18078583-a71d-43a4-92b0-10c3caa4c08c)
 

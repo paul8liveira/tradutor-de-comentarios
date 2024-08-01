@@ -10,7 +10,7 @@ Ele uniu minha vontade de trabalhar com Python desktop e a necessidade de criar 
 - faça a instalação das depêndencias através do **requirements.txt** através do comando `pip install -r requirements.txt`
 - tenha o arquivo `conta-de-servico.json` na raíz do projeto, que representa uma conta de serviço de um projeto Google Cloud.
 - execute o projeto no modo sem debug (Ctrl + F5)
-> Se tudo correr bem, a do programa deve aparecer.
+> Se tudo correr bem, a janela do programa deve aparecer.
 
 ## Criação da conta de serviço
 Para criar uma conta de serviço você deve ter uma conta do Google Cloud que possa criar um projeto. Após a criação do projeto vá até https://console.cloud.google.com/iam-admin/serviceaccounts?authuser=1&project={ID-DO-PROJETO} e clique para criar uma nova conta de serviço. Dê um nome e defina a descrição. Após isso, é importante setar o papel **Usuário da API Cloud Translation** para que seja possível acionar a API de tradução corretamente.

@@ -3,4 +3,4 @@ build/
 dist/
 virtual-env/Lib/*
 *.json
-*.txt
+roteiro.txt

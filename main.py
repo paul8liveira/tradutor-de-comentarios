@@ -33,7 +33,7 @@ def on_translate_button_click():
     thread.start()
 
 root = tk.Tk() 
-root.title("Pecege - Tradutor de comentários")
+root.title("Tradutor de comentários")
 
 select_button = tk.Button(root, text="Selecionar Arquivos", command=lambda: select_files(file_listbox))
 select_button.pack(pady=10)

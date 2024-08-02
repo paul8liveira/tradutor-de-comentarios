@@ -24,7 +24,12 @@ Com o projeto em execução, basta clicar no botão `Selecionar Arquivos`, selec
 Para compilar o projeto, utilize o comando `pyinstaller tradutor-de-comentarios.spec`. Se tudo correr bem, uma pasta chamada `dist` deve ser criada com o executável.
 
 # Resultado
-Ainda há muito que melhorar, como por exemplo, comentários em bloco em arquivos JavaScript utilizando `/**/`, uso correto de caracteres especiais e uso de glossário para evitar tradução de termos indevidamente. De modo geral, está bem satisfatório e foi um bom aquecimento para posteriormente, desenvolver uma aplicação mais robusta 😄.
+Ainda há muito que melhorar, como por exemplo: 
+- comentários em bloco em arquivos JavaScript utilizando `/**/`
+- ~~uso correto de caracteres especiais~~
+- uso de glossário para evitar tradução de termos indevidamente. 
+
+De modo geral, está bem satisfatório e foi um bom aquecimento para posteriormente, desenvolver uma aplicação mais robusta 😄.
 
 Abaixo, um pedaço do resultado da tradução de um arquivo python. 
 

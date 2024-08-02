@@ -2,6 +2,7 @@ import os
 from tkinter import filedialog, Listbox, END
 from google.cloud import translate_v2 as translate
 from google.oauth2 import service_account
+import html
 
 from resources import get_resource_path, chunk_list
 
@@ -49,6 +50,7 @@ def update_file_with_translations(file_path: str, translated_comments: list[tupl
     with open(new_file_path, "w", encoding="utf-8") as file:
         for i, line in enumerate(lines):
             for comment_line_num, translated_comment in translated_comments:
+                translated_comment = html.unescape(translated_comment)
                 if i == comment_line_num - 1:
                     if(ext == ".py" or ext == ".r"):
                         if line.startswith("#"):
@@ -76,11 +78,18 @@ def update_file_with_translations(file_path: str, translated_comments: list[tupl
 
 def process_listbox(file_listbox: Listbox, lang: str):
     files = file_listbox.get(0, END)
+    fixed_comment = "Atenção: A tradução dos comentários desse arquivo foram geradas automaticamente por Inteligência Artificial"
+    first_comment = True
     for file in files:
         comments = extract_comments_from_file(file)
         
         comment_texts = []
         for _, comment in comments:
+            # adiciona mensagem fixa no primeiro comentario
+            if first_comment == True:
+                comment = f'{comment} | {fixed_comment} \n'
+                first_comment = False
+
             if comment.startswith("#") or comment.startswith("//") or comment.startswith("/*"):
                 comment_texts.append(comment)      
             else:
